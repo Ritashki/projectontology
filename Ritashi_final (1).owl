@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ex="http://example.org#">
+
+  <!-- Superclass for Operation -->
+  <rdf:Description rdf:about="http://example.org#Operation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Operation</rdfs:label>
+  </rdf:Description>
+
+  <!-- Subclass for Geometry -->
+  <rdf:Description rdf:about="http://example.org#GeometryOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Geometry Operation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass for Statistics -->
+  <rdf:Description rdf:about="http://example.org#StatisticsOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Statistics Operation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass for Probability -->
+  <rdf:Description rdf:about="http://example.org#ProbabilityOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Probability Operation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Subclass for Calculus -->
+  <rdf:Description rdf:about="http://example.org#CalculusOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:label>Calculus Operation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org#Operation"/>
+  </rdf:Description>
+
+  <!-- Define Specific Operations -->
+  <!-- Area of Ellipse -->
+  <rdf:Description rdf:about="http://example.org#AreaOfEllipse">
+    <rdf:type rdf:resource="http://example.org#GeometryOperation"/>
+    <rdfs:label>Area of Ellipse</rdfs:label>
+  </rdf:Description>
+
+  <!-- Volume of Cone -->
+  <rdf:Description rdf:about="http://example.org#VolumeOfCone">
+    <rdf:type rdf:resource="http://example.org#GeometryOperation"/>
+    <rdfs:label>Volume of Cone</rdfs:label>
+  </rdf:Description>
+
+  <!-- Binomial Probability Distribution -->
+  <rdf:Description rdf:about="http://example.org#BinomialProbability">
+    <rdf:type rdf:resource="http://example.org#ProbabilityOperation"/>
+    <rdfs:label>Binomial Probability</rdfs:label>
+  </rdf:Description>
+
+  <!-- Standard Deviation & Variance -->
+  <rdf:Description rdf:about="http://example.org#StandardDeviation">
+    <rdf:type rdf:resource="http://example.org#StatisticsOperation"/>
+    <rdfs:label>Standard Deviation</rdfs:label>
+  </rdf:Description>
+
+  <!-- Integral Calculation using Simpson's Rule -->
+  <rdf:Description rdf:about="http://example.org#IntegralCalculation">
+    <rdf:type rdf:resource="http://example.org#CalculusOperation"/>
+    <rdfs:label>Integral Calculation (Simpson's Rule)</rdfs:label>
+  </rdf:Description>
+
+  <!-- Sum of Geometric Series -->
+  <rdf:Description rdf:about="http://example.org#GeometricSeriesSum">
+    <rdf:type rdf:resource="http://example.org#MathematicsOperation"/>
+    <rdfs:label>Sum of Geometric Series</rdfs:label>
+  </rdf:Description>
+
+</rdf:RDF>
